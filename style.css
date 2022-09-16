@@ -80,6 +80,7 @@ h1 {
   font-weight: var(--fw-700);
   line-height: 1.893rem;
   color: var(--clr-white);
+  margin-top: 1rem;
 }
 
 h2 {
@@ -102,6 +103,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: 1rem 0 1rem 0;
+  gap: 0.935rem;
 }
 
 .numbers button {
@@ -117,6 +120,11 @@ p {
 .unclicked {
   background: var(--clr-dark-blue);
   color: var(--clr-medium-grey);
+}
+
+.unclicked:hover {
+  background: var(--clr-orange);
+  color: var(--clr-white);
 }
 
 .clicked {
@@ -136,6 +144,11 @@ p {
   text-transform: uppercase;
   line-height: 1.108rem;
   letter-spacing: 0.117rem;
+}
+
+.submit:hover {
+  background: var(--clr-white);
+  color: var(--clr-orange);
 }
 
 .card2 {

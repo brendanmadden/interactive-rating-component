@@ -1,21 +1,28 @@
 "use strict";
 
 const numberButtons = document.querySelectorAll(`.numbers-btn`);
-console.log(numberButtons);
+
+// Functions
+const classSwitcher = function (classList) {
+  if (classList.contains(`unclicked`)) {
+    classList.remove(`unclicked`);
+    classList.add(`clicked`);
+  } else {
+    classList.remove(`clicked`);
+    classList.add(`unclicked`);
+  }
+};
 
 // Add event listener to each number button
-numberButtons.forEach((n, i) => {
-  n.addEventListener(`click`, function (e) {
+numberButtons.forEach((btn, i) => {
+  btn.addEventListener(`click`, function (e) {
     e.preventDefault;
-    console.log(n, i);
-    console.log(n.classList);
-
-    if (n.classList.contains(`unclicked`)) {
-      n.classList.remove(`unclicked`);
-      n.classList.add(`clicked`);
-    } else {
-      n.classList.remove(`clicked`);
-      n.classList.add(`unclicked`);
+    for (const n of numberButtons) {
+      if (n !== e.target) {
+        n.classList.remove(`clicked`);
+        n.classList.add(`unclicked`);
+      }
     }
+    classSwitcher(btn.classList);
   });
 });
