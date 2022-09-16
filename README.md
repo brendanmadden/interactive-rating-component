@@ -48,13 +48,19 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned a lot during this project, and after a long break from coding it helped me to get a lot of my confidence back. I'm so thankful that I decided to take it on and challenge myself, and I'm really proud of my result.
 
-To see how you can add code snippets, see below:
+I learned to solve problems with JavaScript event listeners that I had not experienced in the past, and I was able to effectively resolve all of the issues I ran into in a timely manner.
+
+I learned a little bit more about proper use of semantic HTML throughout this project as well, although I would like to continue to improve in this area, as well as with regard to accessibility.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I've found that onne of the largest challenges I experience when starting a new project from scratch is determining the best layout structure, and the CSS to match it. I would like to continue to improve my layouts, and understanding of the most effective CSS to produce those layouts I'm looking to achieve.
+
+I would also like to continue to learn more about proper use of semantic HTML, and I'm always looking to improve my HTML accessibility.
+
+I'm currently focused on learning as much as I can about JavaScript, and I'm almost finished Jonas' course (referenced below). This is another area for continued development I'm focused on.
 
 ### Useful resources
 
