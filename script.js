@@ -3,7 +3,9 @@
 const numberButtons = document.querySelectorAll(`.numbers-btn`);
 const body = document.querySelector(`body`);
 const card1 = document.querySelector(`.card1`);
+const card2 = document.querySelector(`.card2`);
 const submit = document.querySelector(`.submit`);
+const selected = document.querySelector(`.selected`);
 
 // Functions
 const classSwitcher = function (classList) {
@@ -16,10 +18,12 @@ const classSwitcher = function (classList) {
   }
 };
 
+// Event Listeners
+
 // Add event listener to each number button
 numberButtons.forEach((btn) => {
   btn.addEventListener(`click`, function (e) {
-    e.preventDefault;
+    e.preventDefault();
     for (const n of numberButtons) {
       if (n !== e.target) {
         n.classList.remove(`clicked`);
@@ -51,4 +55,26 @@ body.addEventListener(`click`, function (e) {
       n.classList.add(`unclicked`);
     }
   }
+});
+
+// Change to thank you card when submit is clicked
+submit.addEventListener(`click`, function (e) {
+  e.preventDefault();
+
+  numberButtons.forEach((btn) => {
+    // Prevent empty submissions
+    if (!btn.classList.contains(`clicked`)) {
+      return;
+    } else {
+      // Switch to thank you card
+      card1.classList.add(`hidden`);
+      card2.classList.remove(`hidden`);
+      //  Set text content to selected rating
+      for (const n of numberButtons) {
+        if (n.classList.contains(`clicked`)) {
+          selected.textContent = `You selected ${n.textContent} out of 5`;
+        }
+      }
+    }
+  });
 });
